@@ -1,14 +1,16 @@
+const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
+
 const returnFirstTwoDrivers = function (){
-    const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
+    // const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
     const driversSlice = drivers.slice(0,2);
-    return driversSlice;
+    return drivers, driversSlice;
 };
 console.log(returnFirstTwoDrivers());
 
 const returnLastTwoDrivers = function (){
-    const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
+    // const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
     const driversSlice = drivers.slice(2);
-    return driversSlice;
+    return drivers, driversSlice;
 };
 console.log(returnLastTwoDrivers());
 
@@ -44,5 +46,4 @@ fareTripler();
 const selectDifferentDrivers = function selectDifferentDrivers(arrayOfDrivers,returnFirstTwoDrivers){
     return returnFirstTwoDrivers(arrayOfDrivers);
 }
-selectDifferentDrivers(drivers,returnFirstTwoDrivers);
-console.log('selection different drivers:', selectDifferentDrivers)
+console.log(selectDifferentDrivers(drivers,returnFirstTwoDrivers));
